@@ -47,7 +47,7 @@ OBJCOPY = $(PREFIX)-objcopy
 OBJDUMP = $(PREFIX)-objdump
 READELF = $(PREFIX)-readelf
 SIZE = $(PREFIX)-size
-GDB = $(PREFIX)-gdb
+GDB = gdb
 RM = rm -f
 OPENOCD=openocd
 
