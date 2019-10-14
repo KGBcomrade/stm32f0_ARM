@@ -1,4 +1,4 @@
-/*
+/*asm volatile("svc 0");
  * It is just simple and pure template project
  * It does absolutely nothing and indicates that toolchain
  * is installed correctly.
@@ -8,6 +8,9 @@
 #include "stm32f0xx_ll_system.h"
 #include "stm32f0xx_ll_bus.h"
 #include "stm32f0xx_ll_gpio.h"
+#include "stm32f0xx_ll_exti.h"
+
+static int numi = 0;
 
 void gpio_config() {
 
@@ -54,6 +57,18 @@ static void rcc_config() {
     SystemCoreClock = 48000000;
 }
 
+static void exti_config() {
+	LL_APB1_GRP2_EnableClock(LL_APB1_GRP2_PERIPH_SYSCFG);
+
+	LL_SYSCFG_SetEXTISource(LL_SYSCFG_EXTI_PORTA, LL_SYSCFG_EXTI_LINE0);
+
+	LL_EXTI_EnableIT_0_31(LL_EXTI_LINE_0);
+	LL_EXTI_EnableFallingTrig_0_31(LL_EXTI_LINE_0);
+
+	NVIC_EnableIRQ(EXTI0_1_IRQn);
+	NVIC_SetPriority(EXTI0_1_IRQn, 0);
+}
+
 static void set_indicator(uint8_t num) {
 	
 	
@@ -69,7 +84,18 @@ static void set_indicator(uint8_t num) {
 		LL_GPIO_PIN_3, // 2
 		LL_GPIO_PIN_0 | LL_GPIO_PIN_1 | LL_GPIO_PIN_6 | LL_GPIO_PIN_2 | \
 		LL_GPIO_PIN_3, // 3
-		LL_GPIO_PIN_5 | LL_GPIO_PIN_6 | LL_GPIO_PIN_1 | LL_GPIO_PIN_2 // 4
+		LL_GPIO_PIN_5 | LL_GPIO_PIN_6 | LL_GPIO_PIN_1 | LL_GPIO_PIN_2, // 4
+		LL_GPIO_PIN_0 | LL_GPIO_PIN_5 | LL_GPIO_PIN_6 | LL_GPIO_PIN_2 | \
+			LL_GPIO_PIN_3, // 5
+		LL_GPIO_PIN_0 | LL_GPIO_PIN_5 | LL_GPIO_PIN_6 | LL_GPIO_PIN_2 | \
+			LL_GPIO_PIN_3 | LL_GPIO_PIN_4, //6
+		LL_GPIO_PIN_0 | LL_GPIO_PIN_1 | LL_GPIO_PIN_2, //7
+		LL_GPIO_PIN_0 | LL_GPIO_PIN_1 | LL_GPIO_PIN_2 | LL_GPIO_PIN_3 | \
+			LL_GPIO_PIN_4 | LL_GPIO_PIN_5 | LL_GPIO_PIN_6, //8
+		LL_GPIO_PIN_0 | LL_GPIO_PIN_1 | LL_GPIO_PIN_2 | LL_GPIO_PIN_3 | \
+			LL_GPIO_PIN_5 | LL_GPIO_PIN_6 //9
+		
+		
 	};
 
 	uint32_t port_state = LL_GPIO_ReadOutputPort(GPIOB);
@@ -78,7 +104,7 @@ static void set_indicator(uint8_t num) {
 	LL_GPIO_WriteOutputPort(GPIOB, port_state);
 
 
-}	
+}
 
 
 __attribute__ ((naked)) static void delay_10ms(void) {
@@ -91,12 +117,26 @@ __attribute__ ((naked)) static void delay_10ms(void) {
     	asm (".word 0xea60"); 
 }
 
+void EXTI0_1_IRQHandler() {
+	numi++;
+	//TODO oobrat'
+	delay_10ms();
+	LL_EXTI_ClearFlag_0_31(LL_EXTI_LINE_0);	
+}
+
+
+
 int main(void)
 {
 	rcc_config();
 	gpio_config();
 	
-	set_indicator(2);
+	set_indicator(4);
+
+	exti_config();
+
+	while(1)		
+		set_indicator(numi);
 
 	/*int status, pst = 0;
 	while (1) {
