@@ -9,17 +9,31 @@
 #include "stm32f0xx_ll_bus.h"
 #include "stm32f0xx_ll_gpio.h"
 #include "stm32f0xx_ll_exti.h"
+#include "stm32f0xx_ll_cortex.h"
+#include "stm32f0xx_ll_utils.h"
 
-static int numi = 0;
+
+#define BUTT_TIME_START 0
+#define BUTT_TIME_TRIG 300
+#define BUTT_TIME_COMPLETE 301
+#define LED_TIME_TRIG 1000
+
+
+static int numi = 2;
+static int secc = 0;
+static int8_t shc = 0;
+static int decc = 201;
+static int incc = 201;
+
+
+static const int pow10[] = {1, 10, 100, 1000};
+
+
+
+static void set_indicator(int, int8_t);
 
 void gpio_config() {
 
-	/*LL_AHB1_GRP1_EnableClock(LL_AHB1_GRP1_PERIPH_GPIOC);
-	LL_GPIO_SetPinMode(GPIOC, LL_GPIO_PIN_8, LL_GPIO_MODE_OUTPUT);
-	LL_GPIO_SetPinOutputType(GPIOC, LL_GPIO_PIN_8, LL_GPIO_OUTPUT_PUSHPULL);
-	LL_GPIO_SetPinMode(GPIOC, LL_GPIO_PIN_9, LL_GPIO_MODE_OUTPUT);
-	LL_GPIO_SetPinOutputType(GPIOC, LL_GPIO_PIN_9, LL_GPIO_OUTPUT_PUSHPULL);
-	*/
 
 	LL_AHB1_GRP1_EnableClock(LL_AHB1_GRP1_PERIPH_GPIOB);
 	LL_GPIO_SetPinMode(GPIOB, LL_GPIO_PIN_0, LL_GPIO_MODE_OUTPUT);
@@ -34,6 +48,23 @@ void gpio_config() {
 
 	LL_AHB1_GRP1_EnableClock(LL_AHB1_GRP1_PERIPH_GPIOA);
 	LL_GPIO_SetPinMode(GPIOA, LL_GPIO_PIN_0, LL_GPIO_MODE_INPUT);	
+
+	LL_AHB1_GRP1_EnableClock(LL_AHB1_GRP1_PERIPH_GPIOC);
+	LL_GPIO_SetPinMode(GPIOC, LL_GPIO_PIN_8, LL_GPIO_MODE_OUTPUT);
+	LL_GPIO_SetPinMode(GPIOC, LL_GPIO_PIN_9, LL_GPIO_MODE_OUTPUT);
+	LL_GPIO_SetPinMode(GPIOC, LL_GPIO_PIN_0, LL_GPIO_MODE_OUTPUT);
+	LL_GPIO_SetPinMode(GPIOC, LL_GPIO_PIN_1, LL_GPIO_MODE_OUTPUT);
+	LL_GPIO_SetPinMode(GPIOC, LL_GPIO_PIN_2, LL_GPIO_MODE_OUTPUT);
+	LL_GPIO_SetPinMode(GPIOC, LL_GPIO_PIN_3, LL_GPIO_MODE_OUTPUT);
+
+
+	LL_GPIO_SetPinOutputType(GPIOC, LL_GPIO_PIN_0, LL_GPIO_OUTPUT_OPENDRAIN);
+	LL_GPIO_SetPinOutputType(GPIOC, LL_GPIO_PIN_1, LL_GPIO_OUTPUT_OPENDRAIN);
+	LL_GPIO_SetPinOutputType(GPIOC, LL_GPIO_PIN_2, LL_GPIO_OUTPUT_OPENDRAIN);
+	LL_GPIO_SetPinOutputType(GPIOC, LL_GPIO_PIN_3, LL_GPIO_OUTPUT_OPENDRAIN);
+
+	LL_GPIO_SetPinMode(GPIOB, LL_GPIO_PIN_8, LL_GPIO_MODE_INPUT);
+
 }
 
 static void rcc_config() {
@@ -61,19 +92,75 @@ static void exti_config() {
 	LL_APB1_GRP2_EnableClock(LL_APB1_GRP2_PERIPH_SYSCFG);
 
 	LL_SYSCFG_SetEXTISource(LL_SYSCFG_EXTI_PORTA, LL_SYSCFG_EXTI_LINE0);
+	LL_SYSCFG_SetEXTISource(LL_SYSCFG_EXTI_PORTB, LL_SYSCFG_EXTI_LINE8);
 
 	LL_EXTI_EnableIT_0_31(LL_EXTI_LINE_0);
-	LL_EXTI_EnableFallingTrig_0_31(LL_EXTI_LINE_0);
+	LL_EXTI_EnableRisingTrig_0_31(LL_EXTI_LINE_0);
 
 	NVIC_EnableIRQ(EXTI0_1_IRQn);
-	NVIC_SetPriority(EXTI0_1_IRQn, 0);
+	NVIC_SetPriority(EXTI0_1_IRQn, 1);
+
+	LL_EXTI_EnableIT_0_31(LL_EXTI_LINE_8);
+	LL_EXTI_EnableFallingTrig_0_31(LL_EXTI_LINE_8);
+
+	NVIC_EnableIRQ(EXTI4_15_IRQn);
+	NVIC_SetPriority(EXTI4_15_IRQn, 2);
 }
 
-static void set_indicator(uint8_t num) {
+static void systick_config() {
+	LL_InitTick(48000000, 1000);
+
+	LL_SYSTICK_EnableIT();
+
+	NVIC_SetPriority(SysTick_IRQn, 0);
+}
+
+void SysTick_Handler() {
+	secc++;
+	if(secc == LED_TIME_TRIG) {
+		LL_GPIO_TogglePin(GPIOC, LL_GPIO_PIN_9);
+		secc = 0;
+	}
+	if((shc++) == 3)
+		shc = 0;
+	set_indicator(numi / pow10[shc], shc);
+		
+	switch(decc) {
+		default:
+			decc++;
+			break;
+		case BUTT_TIME_TRIG:
+			decc++;
+			numi--;
+			if(numi < 0)
+				numi = 0;
+			break;
+		case BUTT_TIME_COMPLETE:
+			break;
+	}
+	switch(incc) {
+		default:
+			incc++;
+			break;
+		case BUTT_TIME_TRIG:
+			incc++;
+			numi++;
+			if(numi > 9999)
+				numi = 9999;
+			break;
+		case BUTT_TIME_COMPLETE:
+			break;
+	}
+	return;
+}
+
+static void set_indicator(int num, int8_t sh) {
 	
 	
 	static int32_t mask = LL_GPIO_PIN_0 | LL_GPIO_PIN_1 | LL_GPIO_PIN_2 | LL_GPIO_PIN_3 \
 				| LL_GPIO_PIN_4 | LL_GPIO_PIN_5 |  LL_GPIO_PIN_6;
+
+	static int32_t shmask = LL_GPIO_PIN_0 | LL_GPIO_PIN_1 | LL_GPIO_PIN_2 | LL_GPIO_PIN_3;
 
 
 	static const uint32_t decoder[] = {
@@ -98,30 +185,30 @@ static void set_indicator(uint8_t num) {
 		
 	};
 
+	static const uint32_t shdecoder[] = {
+		LL_GPIO_PIN_0, LL_GPIO_PIN_1, LL_GPIO_PIN_2, LL_GPIO_PIN_3
+	};
+
 	uint32_t port_state = LL_GPIO_ReadOutputPort(GPIOB);
 
 	port_state = (port_state & ~mask) | decoder[num % (sizeof(decoder) / sizeof(uint32_t))];
 	LL_GPIO_WriteOutputPort(GPIOB, port_state);
 
+	port_state = LL_GPIO_ReadOutputPort(GPIOC);
+	port_state = (port_state & ~shmask) | (~shdecoder[sh] & shmask);
+	LL_GPIO_WriteOutputPort(GPIOC, port_state);
 
-}
 
-
-__attribute__ ((naked)) static void delay_10ms(void) {
-	asm("push {r7, lr}");
-	asm("ldr r6, [pc, #8]");
-	asm ("sub r6, #1");
-	asm ("cmp r6, #0");
-    	asm ("bne delay_10ms+0x4");
-    	asm ("pop {r7, pc}");
-    	asm (".word 0xea60"); 
 }
 
 void EXTI0_1_IRQHandler() {
-	numi++;
-	//TODO oobrat'
-	delay_10ms();
+	incc = BUTT_TIME_START;	
 	LL_EXTI_ClearFlag_0_31(LL_EXTI_LINE_0);	
+}
+
+void EXTI4_15_IRQHandler() {
+	decc = BUTT_TIME_START;
+	LL_EXTI_ClearFlag_0_31(LL_EXTI_LINE_8);
 }
 
 
@@ -131,21 +218,12 @@ int main(void)
 	rcc_config();
 	gpio_config();
 	
-	set_indicator(4);
-
 	exti_config();
+	systick_config();
+	
+	LL_GPIO_SetOutputPin(GPIOC, LL_GPIO_PIN_8);
 
-	while(1)		
-		set_indicator(numi);
+	while(1);
 
-	/*int status, pst = 0;
-	while (1) {
-		status = LL_GPIO_IsInputPinSet(GPIOA, LL_GPIO_PIN_0);
-		if(status && (status != pst)) {
-			delay_10ms();
-			LL_GPIO_TogglePin(GPIOC, LL_GPIO_PIN_8);
-		}
-		pst = status;
-	}*/
 	return 0;
 }
