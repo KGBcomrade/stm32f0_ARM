@@ -1,0 +1,3 @@
+/home/kgbcomrade/stm32f0_ARM/labs/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/kgbcomrade/stm32f0_ARM/labs/cmake-build-debug/CMakeFiles/labs.dir
+/home/kgbcomrade/stm32f0_ARM/labs/cmake-build-debug/CMakeFiles/edit_cache.dir

@@ -1,0 +1,2532 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="labs"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/kgbcomrade/stm32f0_ARM/labs/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/kgbcomrade/stm32f0_ARM/labs/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/kgbcomrade/stm32f0_ARM/labs/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/kgbcomrade/stm32f0_ARM/labs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/kgbcomrade/stm32f0_ARM/labs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/kgbcomrade/stm32f0_ARM/labs/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/kgbcomrade/stm32f0_ARM/labs/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/kgbcomrade/stm32f0_ARM/labs/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/kgbcomrade/stm32f0_ARM/labs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/kgbcomrade/stm32f0_ARM/labs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="labs">
+				<Option output="/home/kgbcomrade/stm32f0_ARM/labs/cmake-build-debug/labs" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/kgbcomrade/stm32f0_ARM/labs/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/01_blank/core"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/01_blank/plib"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/03_control_clock/core"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/03_control_clock/plib"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/03_reset/core"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/03_reset/plib"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/04_gpio/core"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/04_gpio/plib"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/05_nvic/core"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/05_nvic/plib"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/06_exti_systick/core"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/06_exti_systick/plib"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/07_timers_counter/core"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/07_timers_counter/plib"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/07_timers_inp_capture/core"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/07_timers_inp_capture/plib"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/08_timers_enc/core"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/08_timers_enc/plib"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/08_timers_pwm/core"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/08_timers_pwm/plib"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/09_usart_terminal/core"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/09_usart_terminal/plib"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/09_usart_xprintf/core"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/09_usart_xprintf/lib"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/09_usart_xprintf/plib"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/11_rtc_alert/core"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/11_rtc_alert/plib"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/12_i2c_oled_display/core"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/12_i2c_oled_display/lib"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/12_i2c_oled_display/plib"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/13_spi_shift_reg/core"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/13_spi_shift_reg/plib"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/14_adc_temp/core"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/14_adc_temp/lib"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/14_adc_temp/plib"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/14_dac/core"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/14_dac/plib"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/16_fsm/core"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/16_fsm/lib"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/16_fsm/plib"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/rtos/core"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/rtos/freertos"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/rtos/freertos/include"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/rtos/freertos/portable/GCC/ARM_CM0"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/rtos/lib"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/rtos/plib"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/rtos_idle/core"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/rtos_idle/freertos"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/rtos_idle/freertos/include"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/rtos_idle/freertos/portable/GCC/ARM_CM0"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/rtos_idle/lib"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/rtos_idle/plib"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/rtos_ipc/core"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/rtos_ipc/freertos"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/rtos_ipc/freertos/include"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/rtos_ipc/freertos/portable/GCC/ARM_CM0"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/rtos_ipc/lib"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/rtos_ipc/plib"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/terminal/core"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/terminal/lib"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/terminal/plib"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/kgbcomrade/stm32f0_ARM/labs/cmake-build-debug/Makefile&quot;  VERBOSE=1 labs"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/kgbcomrade/stm32f0_ARM/labs/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/kgbcomrade/stm32f0_ARM/labs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/kgbcomrade/stm32f0_ARM/labs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="labs/fast">
+				<Option output="/home/kgbcomrade/stm32f0_ARM/labs/cmake-build-debug/labs" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/kgbcomrade/stm32f0_ARM/labs/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/01_blank/core"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/01_blank/plib"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/03_control_clock/core"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/03_control_clock/plib"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/03_reset/core"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/03_reset/plib"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/04_gpio/core"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/04_gpio/plib"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/05_nvic/core"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/05_nvic/plib"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/06_exti_systick/core"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/06_exti_systick/plib"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/07_timers_counter/core"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/07_timers_counter/plib"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/07_timers_inp_capture/core"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/07_timers_inp_capture/plib"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/08_timers_enc/core"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/08_timers_enc/plib"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/08_timers_pwm/core"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/08_timers_pwm/plib"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/09_usart_terminal/core"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/09_usart_terminal/plib"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/09_usart_xprintf/core"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/09_usart_xprintf/lib"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/09_usart_xprintf/plib"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/11_rtc_alert/core"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/11_rtc_alert/plib"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/12_i2c_oled_display/core"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/12_i2c_oled_display/lib"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/12_i2c_oled_display/plib"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/13_spi_shift_reg/core"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/13_spi_shift_reg/plib"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/14_adc_temp/core"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/14_adc_temp/lib"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/14_adc_temp/plib"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/14_dac/core"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/14_dac/plib"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/16_fsm/core"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/16_fsm/lib"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/16_fsm/plib"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/rtos/core"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/rtos/freertos"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/rtos/freertos/include"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/rtos/freertos/portable/GCC/ARM_CM0"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/rtos/lib"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/rtos/plib"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/rtos_idle/core"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/rtos_idle/freertos"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/rtos_idle/freertos/include"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/rtos_idle/freertos/portable/GCC/ARM_CM0"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/rtos_idle/lib"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/rtos_idle/plib"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/rtos_ipc/core"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/rtos_ipc/freertos"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/rtos_ipc/freertos/include"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/rtos_ipc/freertos/portable/GCC/ARM_CM0"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/rtos_ipc/lib"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/rtos_ipc/plib"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/terminal/core"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/terminal/lib"/>
+					<Add directory="/home/kgbcomrade/stm32f0_ARM/labs/terminal/plib"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/kgbcomrade/stm32f0_ARM/labs/cmake-build-debug/Makefile&quot;  VERBOSE=1 labs/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/kgbcomrade/stm32f0_ARM/labs/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/kgbcomrade/stm32f0_ARM/labs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/kgbcomrade/stm32f0_ARM/labs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/kgbcomrade/stm32f0_ARM/labs/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/kgbcomrade/stm32f0_ARM/labs/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/kgbcomrade/stm32f0_ARM/labs/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/kgbcomrade/stm32f0_ARM/labs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/kgbcomrade/stm32f0_ARM/labs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/01_blank/core/cmsis_gcc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/01_blank/core/core_cm0.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/01_blank/core/stm32f051x8.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/01_blank/core/stm32f0xx.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/01_blank/core/system_stm32f0xx.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/01_blank/core/system_stm32f0xx.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/01_blank/ind7/main.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/01_blank/lib/system_handlers.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/01_blank/main.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/01_blank/plib/stm32f0xx_ll_adc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/01_blank/plib/stm32f0xx_ll_bus.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/01_blank/plib/stm32f0xx_ll_comp.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/01_blank/plib/stm32f0xx_ll_cortex.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/01_blank/plib/stm32f0xx_ll_crc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/01_blank/plib/stm32f0xx_ll_crs.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/01_blank/plib/stm32f0xx_ll_dac.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/01_blank/plib/stm32f0xx_ll_dma.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/01_blank/plib/stm32f0xx_ll_exti.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/01_blank/plib/stm32f0xx_ll_gpio.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/01_blank/plib/stm32f0xx_ll_i2c.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/01_blank/plib/stm32f0xx_ll_iwdg.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/01_blank/plib/stm32f0xx_ll_pwr.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/01_blank/plib/stm32f0xx_ll_rcc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/01_blank/plib/stm32f0xx_ll_rtc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/01_blank/plib/stm32f0xx_ll_spi.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/01_blank/plib/stm32f0xx_ll_system.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/01_blank/plib/stm32f0xx_ll_tim.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/01_blank/plib/stm32f0xx_ll_usart.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/01_blank/plib/stm32f0xx_ll_utils.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/01_blank/plib/stm32f0xx_ll_wwdg.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/03_control_clock/core/cmsis_gcc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/03_control_clock/core/core_cm0.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/03_control_clock/core/stm32f051x8.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/03_control_clock/core/stm32f0xx.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/03_control_clock/core/system_stm32f0xx.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/03_control_clock/core/system_stm32f0xx.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/03_control_clock/lib/system_handlers.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/03_control_clock/main.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/03_control_clock/plib/stm32f0xx_ll_adc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/03_control_clock/plib/stm32f0xx_ll_bus.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/03_control_clock/plib/stm32f0xx_ll_comp.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/03_control_clock/plib/stm32f0xx_ll_cortex.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/03_control_clock/plib/stm32f0xx_ll_crc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/03_control_clock/plib/stm32f0xx_ll_crs.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/03_control_clock/plib/stm32f0xx_ll_dac.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/03_control_clock/plib/stm32f0xx_ll_dma.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/03_control_clock/plib/stm32f0xx_ll_exti.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/03_control_clock/plib/stm32f0xx_ll_gpio.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/03_control_clock/plib/stm32f0xx_ll_i2c.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/03_control_clock/plib/stm32f0xx_ll_iwdg.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/03_control_clock/plib/stm32f0xx_ll_pwr.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/03_control_clock/plib/stm32f0xx_ll_rcc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/03_control_clock/plib/stm32f0xx_ll_rtc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/03_control_clock/plib/stm32f0xx_ll_spi.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/03_control_clock/plib/stm32f0xx_ll_system.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/03_control_clock/plib/stm32f0xx_ll_tim.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/03_control_clock/plib/stm32f0xx_ll_usart.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/03_control_clock/plib/stm32f0xx_ll_utils.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/03_control_clock/plib/stm32f0xx_ll_wwdg.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/03_reset/core/cmsis_gcc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/03_reset/core/core_cm0.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/03_reset/core/stm32f051x8.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/03_reset/core/stm32f0xx.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/03_reset/core/system_stm32f0xx.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/03_reset/core/system_stm32f0xx.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/03_reset/lib/system_handlers.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/03_reset/main.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/03_reset/plib/stm32f0xx_ll_adc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/03_reset/plib/stm32f0xx_ll_bus.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/03_reset/plib/stm32f0xx_ll_comp.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/03_reset/plib/stm32f0xx_ll_cortex.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/03_reset/plib/stm32f0xx_ll_crc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/03_reset/plib/stm32f0xx_ll_crs.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/03_reset/plib/stm32f0xx_ll_dac.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/03_reset/plib/stm32f0xx_ll_dma.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/03_reset/plib/stm32f0xx_ll_exti.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/03_reset/plib/stm32f0xx_ll_gpio.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/03_reset/plib/stm32f0xx_ll_i2c.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/03_reset/plib/stm32f0xx_ll_iwdg.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/03_reset/plib/stm32f0xx_ll_pwr.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/03_reset/plib/stm32f0xx_ll_rcc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/03_reset/plib/stm32f0xx_ll_rtc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/03_reset/plib/stm32f0xx_ll_spi.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/03_reset/plib/stm32f0xx_ll_system.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/03_reset/plib/stm32f0xx_ll_tim.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/03_reset/plib/stm32f0xx_ll_usart.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/03_reset/plib/stm32f0xx_ll_utils.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/03_reset/plib/stm32f0xx_ll_wwdg.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/04_gpio/core/cmsis_gcc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/04_gpio/core/core_cm0.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/04_gpio/core/stm32f051x8.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/04_gpio/core/stm32f0xx.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/04_gpio/core/system_stm32f0xx.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/04_gpio/core/system_stm32f0xx.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/04_gpio/lib/system_handlers.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/04_gpio/main.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/04_gpio/plib/stm32f0xx_ll_adc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/04_gpio/plib/stm32f0xx_ll_bus.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/04_gpio/plib/stm32f0xx_ll_comp.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/04_gpio/plib/stm32f0xx_ll_cortex.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/04_gpio/plib/stm32f0xx_ll_crc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/04_gpio/plib/stm32f0xx_ll_crs.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/04_gpio/plib/stm32f0xx_ll_dac.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/04_gpio/plib/stm32f0xx_ll_dma.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/04_gpio/plib/stm32f0xx_ll_exti.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/04_gpio/plib/stm32f0xx_ll_gpio.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/04_gpio/plib/stm32f0xx_ll_i2c.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/04_gpio/plib/stm32f0xx_ll_iwdg.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/04_gpio/plib/stm32f0xx_ll_pwr.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/04_gpio/plib/stm32f0xx_ll_rcc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/04_gpio/plib/stm32f0xx_ll_rtc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/04_gpio/plib/stm32f0xx_ll_spi.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/04_gpio/plib/stm32f0xx_ll_system.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/04_gpio/plib/stm32f0xx_ll_tim.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/04_gpio/plib/stm32f0xx_ll_usart.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/04_gpio/plib/stm32f0xx_ll_utils.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/04_gpio/plib/stm32f0xx_ll_wwdg.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/05_nvic/core/cmsis_gcc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/05_nvic/core/core_cm0.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/05_nvic/core/stm32f051x8.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/05_nvic/core/stm32f0xx.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/05_nvic/core/system_stm32f0xx.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/05_nvic/core/system_stm32f0xx.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/05_nvic/lib/system_handlers.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/05_nvic/main.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/05_nvic/plib/stm32f0xx_ll_adc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/05_nvic/plib/stm32f0xx_ll_bus.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/05_nvic/plib/stm32f0xx_ll_comp.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/05_nvic/plib/stm32f0xx_ll_cortex.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/05_nvic/plib/stm32f0xx_ll_crc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/05_nvic/plib/stm32f0xx_ll_crs.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/05_nvic/plib/stm32f0xx_ll_dac.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/05_nvic/plib/stm32f0xx_ll_dma.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/05_nvic/plib/stm32f0xx_ll_exti.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/05_nvic/plib/stm32f0xx_ll_gpio.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/05_nvic/plib/stm32f0xx_ll_i2c.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/05_nvic/plib/stm32f0xx_ll_iwdg.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/05_nvic/plib/stm32f0xx_ll_pwr.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/05_nvic/plib/stm32f0xx_ll_rcc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/05_nvic/plib/stm32f0xx_ll_rtc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/05_nvic/plib/stm32f0xx_ll_spi.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/05_nvic/plib/stm32f0xx_ll_system.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/05_nvic/plib/stm32f0xx_ll_tim.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/05_nvic/plib/stm32f0xx_ll_usart.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/05_nvic/plib/stm32f0xx_ll_utils.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/05_nvic/plib/stm32f0xx_ll_wwdg.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/06_exti_systick/core/cmsis_gcc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/06_exti_systick/core/core_cm0.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/06_exti_systick/core/stm32f051x8.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/06_exti_systick/core/stm32f0xx.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/06_exti_systick/core/system_stm32f0xx.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/06_exti_systick/core/system_stm32f0xx.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/06_exti_systick/lib/system_handlers.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/06_exti_systick/main.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/06_exti_systick/plib/stm32f0xx_ll_adc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/06_exti_systick/plib/stm32f0xx_ll_bus.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/06_exti_systick/plib/stm32f0xx_ll_comp.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/06_exti_systick/plib/stm32f0xx_ll_cortex.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/06_exti_systick/plib/stm32f0xx_ll_crc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/06_exti_systick/plib/stm32f0xx_ll_crs.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/06_exti_systick/plib/stm32f0xx_ll_dac.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/06_exti_systick/plib/stm32f0xx_ll_dma.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/06_exti_systick/plib/stm32f0xx_ll_exti.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/06_exti_systick/plib/stm32f0xx_ll_gpio.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/06_exti_systick/plib/stm32f0xx_ll_i2c.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/06_exti_systick/plib/stm32f0xx_ll_iwdg.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/06_exti_systick/plib/stm32f0xx_ll_pwr.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/06_exti_systick/plib/stm32f0xx_ll_rcc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/06_exti_systick/plib/stm32f0xx_ll_rtc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/06_exti_systick/plib/stm32f0xx_ll_spi.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/06_exti_systick/plib/stm32f0xx_ll_system.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/06_exti_systick/plib/stm32f0xx_ll_tim.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/06_exti_systick/plib/stm32f0xx_ll_usart.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/06_exti_systick/plib/stm32f0xx_ll_utils.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/06_exti_systick/plib/stm32f0xx_ll_wwdg.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/07_timers_counter/core/cmsis_gcc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/07_timers_counter/core/core_cm0.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/07_timers_counter/core/stm32f051x8.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/07_timers_counter/core/stm32f0xx.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/07_timers_counter/core/system_stm32f0xx.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/07_timers_counter/core/system_stm32f0xx.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/07_timers_counter/lib/system_handlers.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/07_timers_counter/main.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/07_timers_counter/plib/stm32f0xx_ll_adc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/07_timers_counter/plib/stm32f0xx_ll_bus.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/07_timers_counter/plib/stm32f0xx_ll_comp.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/07_timers_counter/plib/stm32f0xx_ll_cortex.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/07_timers_counter/plib/stm32f0xx_ll_crc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/07_timers_counter/plib/stm32f0xx_ll_crs.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/07_timers_counter/plib/stm32f0xx_ll_dac.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/07_timers_counter/plib/stm32f0xx_ll_dma.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/07_timers_counter/plib/stm32f0xx_ll_exti.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/07_timers_counter/plib/stm32f0xx_ll_gpio.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/07_timers_counter/plib/stm32f0xx_ll_i2c.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/07_timers_counter/plib/stm32f0xx_ll_iwdg.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/07_timers_counter/plib/stm32f0xx_ll_pwr.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/07_timers_counter/plib/stm32f0xx_ll_rcc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/07_timers_counter/plib/stm32f0xx_ll_rtc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/07_timers_counter/plib/stm32f0xx_ll_spi.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/07_timers_counter/plib/stm32f0xx_ll_system.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/07_timers_counter/plib/stm32f0xx_ll_tim.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/07_timers_counter/plib/stm32f0xx_ll_usart.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/07_timers_counter/plib/stm32f0xx_ll_utils.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/07_timers_counter/plib/stm32f0xx_ll_wwdg.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/07_timers_inp_capture/core/cmsis_gcc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/07_timers_inp_capture/core/core_cm0.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/07_timers_inp_capture/core/stm32f051x8.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/07_timers_inp_capture/core/stm32f0xx.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/07_timers_inp_capture/core/system_stm32f0xx.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/07_timers_inp_capture/core/system_stm32f0xx.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/07_timers_inp_capture/lib/system_handlers.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/07_timers_inp_capture/main.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/07_timers_inp_capture/plib/stm32f0xx_ll_adc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/07_timers_inp_capture/plib/stm32f0xx_ll_bus.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/07_timers_inp_capture/plib/stm32f0xx_ll_comp.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/07_timers_inp_capture/plib/stm32f0xx_ll_cortex.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/07_timers_inp_capture/plib/stm32f0xx_ll_crc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/07_timers_inp_capture/plib/stm32f0xx_ll_crs.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/07_timers_inp_capture/plib/stm32f0xx_ll_dac.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/07_timers_inp_capture/plib/stm32f0xx_ll_dma.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/07_timers_inp_capture/plib/stm32f0xx_ll_exti.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/07_timers_inp_capture/plib/stm32f0xx_ll_gpio.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/07_timers_inp_capture/plib/stm32f0xx_ll_i2c.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/07_timers_inp_capture/plib/stm32f0xx_ll_iwdg.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/07_timers_inp_capture/plib/stm32f0xx_ll_pwr.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/07_timers_inp_capture/plib/stm32f0xx_ll_rcc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/07_timers_inp_capture/plib/stm32f0xx_ll_rtc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/07_timers_inp_capture/plib/stm32f0xx_ll_spi.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/07_timers_inp_capture/plib/stm32f0xx_ll_system.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/07_timers_inp_capture/plib/stm32f0xx_ll_tim.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/07_timers_inp_capture/plib/stm32f0xx_ll_usart.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/07_timers_inp_capture/plib/stm32f0xx_ll_utils.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/07_timers_inp_capture/plib/stm32f0xx_ll_wwdg.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/08_timers_enc/core/cmsis_gcc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/08_timers_enc/core/core_cm0.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/08_timers_enc/core/stm32f051x8.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/08_timers_enc/core/stm32f0xx.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/08_timers_enc/core/system_stm32f0xx.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/08_timers_enc/core/system_stm32f0xx.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/08_timers_enc/lib/system_handlers.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/08_timers_enc/main.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/08_timers_enc/plib/stm32f0xx_ll_adc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/08_timers_enc/plib/stm32f0xx_ll_bus.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/08_timers_enc/plib/stm32f0xx_ll_comp.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/08_timers_enc/plib/stm32f0xx_ll_cortex.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/08_timers_enc/plib/stm32f0xx_ll_crc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/08_timers_enc/plib/stm32f0xx_ll_crs.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/08_timers_enc/plib/stm32f0xx_ll_dac.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/08_timers_enc/plib/stm32f0xx_ll_dma.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/08_timers_enc/plib/stm32f0xx_ll_exti.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/08_timers_enc/plib/stm32f0xx_ll_gpio.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/08_timers_enc/plib/stm32f0xx_ll_i2c.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/08_timers_enc/plib/stm32f0xx_ll_iwdg.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/08_timers_enc/plib/stm32f0xx_ll_pwr.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/08_timers_enc/plib/stm32f0xx_ll_rcc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/08_timers_enc/plib/stm32f0xx_ll_rtc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/08_timers_enc/plib/stm32f0xx_ll_spi.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/08_timers_enc/plib/stm32f0xx_ll_system.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/08_timers_enc/plib/stm32f0xx_ll_tim.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/08_timers_enc/plib/stm32f0xx_ll_usart.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/08_timers_enc/plib/stm32f0xx_ll_utils.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/08_timers_enc/plib/stm32f0xx_ll_wwdg.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/08_timers_pwm/core/cmsis_gcc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/08_timers_pwm/core/core_cm0.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/08_timers_pwm/core/stm32f051x8.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/08_timers_pwm/core/stm32f0xx.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/08_timers_pwm/core/system_stm32f0xx.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/08_timers_pwm/core/system_stm32f0xx.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/08_timers_pwm/lib/system_handlers.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/08_timers_pwm/main.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/08_timers_pwm/plib/stm32f0xx_ll_adc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/08_timers_pwm/plib/stm32f0xx_ll_bus.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/08_timers_pwm/plib/stm32f0xx_ll_comp.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/08_timers_pwm/plib/stm32f0xx_ll_cortex.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/08_timers_pwm/plib/stm32f0xx_ll_crc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/08_timers_pwm/plib/stm32f0xx_ll_crs.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/08_timers_pwm/plib/stm32f0xx_ll_dac.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/08_timers_pwm/plib/stm32f0xx_ll_dma.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/08_timers_pwm/plib/stm32f0xx_ll_exti.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/08_timers_pwm/plib/stm32f0xx_ll_gpio.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/08_timers_pwm/plib/stm32f0xx_ll_i2c.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/08_timers_pwm/plib/stm32f0xx_ll_iwdg.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/08_timers_pwm/plib/stm32f0xx_ll_pwr.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/08_timers_pwm/plib/stm32f0xx_ll_rcc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/08_timers_pwm/plib/stm32f0xx_ll_rtc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/08_timers_pwm/plib/stm32f0xx_ll_spi.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/08_timers_pwm/plib/stm32f0xx_ll_system.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/08_timers_pwm/plib/stm32f0xx_ll_tim.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/08_timers_pwm/plib/stm32f0xx_ll_usart.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/08_timers_pwm/plib/stm32f0xx_ll_utils.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/08_timers_pwm/plib/stm32f0xx_ll_wwdg.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/09_usart_terminal/core/cmsis_gcc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/09_usart_terminal/core/core_cm0.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/09_usart_terminal/core/stm32f051x8.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/09_usart_terminal/core/stm32f0xx.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/09_usart_terminal/core/system_stm32f0xx.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/09_usart_terminal/core/system_stm32f0xx.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/09_usart_terminal/lib/system_handlers.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/09_usart_terminal/main.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/09_usart_terminal/plib/stm32f0xx_ll_adc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/09_usart_terminal/plib/stm32f0xx_ll_bus.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/09_usart_terminal/plib/stm32f0xx_ll_comp.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/09_usart_terminal/plib/stm32f0xx_ll_cortex.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/09_usart_terminal/plib/stm32f0xx_ll_crc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/09_usart_terminal/plib/stm32f0xx_ll_crs.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/09_usart_terminal/plib/stm32f0xx_ll_dac.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/09_usart_terminal/plib/stm32f0xx_ll_dma.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/09_usart_terminal/plib/stm32f0xx_ll_exti.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/09_usart_terminal/plib/stm32f0xx_ll_gpio.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/09_usart_terminal/plib/stm32f0xx_ll_i2c.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/09_usart_terminal/plib/stm32f0xx_ll_iwdg.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/09_usart_terminal/plib/stm32f0xx_ll_pwr.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/09_usart_terminal/plib/stm32f0xx_ll_rcc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/09_usart_terminal/plib/stm32f0xx_ll_rtc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/09_usart_terminal/plib/stm32f0xx_ll_spi.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/09_usart_terminal/plib/stm32f0xx_ll_system.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/09_usart_terminal/plib/stm32f0xx_ll_tim.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/09_usart_terminal/plib/stm32f0xx_ll_usart.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/09_usart_terminal/plib/stm32f0xx_ll_utils.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/09_usart_terminal/plib/stm32f0xx_ll_wwdg.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/09_usart_xprintf/core/cmsis_gcc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/09_usart_xprintf/core/core_cm0.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/09_usart_xprintf/core/stm32f051x8.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/09_usart_xprintf/core/stm32f0xx.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/09_usart_xprintf/core/system_stm32f0xx.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/09_usart_xprintf/core/system_stm32f0xx.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/09_usart_xprintf/lib/system_handlers.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/09_usart_xprintf/lib/xprintf.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/09_usart_xprintf/lib/xprintf.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/09_usart_xprintf/main.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/09_usart_xprintf/plib/stm32f0xx_ll_adc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/09_usart_xprintf/plib/stm32f0xx_ll_bus.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/09_usart_xprintf/plib/stm32f0xx_ll_comp.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/09_usart_xprintf/plib/stm32f0xx_ll_cortex.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/09_usart_xprintf/plib/stm32f0xx_ll_crc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/09_usart_xprintf/plib/stm32f0xx_ll_crs.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/09_usart_xprintf/plib/stm32f0xx_ll_dac.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/09_usart_xprintf/plib/stm32f0xx_ll_dma.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/09_usart_xprintf/plib/stm32f0xx_ll_exti.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/09_usart_xprintf/plib/stm32f0xx_ll_gpio.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/09_usart_xprintf/plib/stm32f0xx_ll_i2c.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/09_usart_xprintf/plib/stm32f0xx_ll_iwdg.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/09_usart_xprintf/plib/stm32f0xx_ll_pwr.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/09_usart_xprintf/plib/stm32f0xx_ll_rcc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/09_usart_xprintf/plib/stm32f0xx_ll_rtc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/09_usart_xprintf/plib/stm32f0xx_ll_spi.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/09_usart_xprintf/plib/stm32f0xx_ll_system.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/09_usart_xprintf/plib/stm32f0xx_ll_tim.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/09_usart_xprintf/plib/stm32f0xx_ll_usart.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/09_usart_xprintf/plib/stm32f0xx_ll_utils.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/09_usart_xprintf/plib/stm32f0xx_ll_wwdg.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/11_rtc_alert/core/cmsis_gcc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/11_rtc_alert/core/core_cm0.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/11_rtc_alert/core/stm32f051x8.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/11_rtc_alert/core/stm32f0xx.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/11_rtc_alert/core/system_stm32f0xx.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/11_rtc_alert/core/system_stm32f0xx.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/11_rtc_alert/lib/system_handlers.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/11_rtc_alert/main.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/11_rtc_alert/plib/stm32f0xx_ll_adc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/11_rtc_alert/plib/stm32f0xx_ll_bus.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/11_rtc_alert/plib/stm32f0xx_ll_comp.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/11_rtc_alert/plib/stm32f0xx_ll_cortex.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/11_rtc_alert/plib/stm32f0xx_ll_crc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/11_rtc_alert/plib/stm32f0xx_ll_crs.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/11_rtc_alert/plib/stm32f0xx_ll_dac.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/11_rtc_alert/plib/stm32f0xx_ll_dma.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/11_rtc_alert/plib/stm32f0xx_ll_exti.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/11_rtc_alert/plib/stm32f0xx_ll_gpio.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/11_rtc_alert/plib/stm32f0xx_ll_i2c.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/11_rtc_alert/plib/stm32f0xx_ll_iwdg.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/11_rtc_alert/plib/stm32f0xx_ll_pwr.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/11_rtc_alert/plib/stm32f0xx_ll_rcc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/11_rtc_alert/plib/stm32f0xx_ll_rtc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/11_rtc_alert/plib/stm32f0xx_ll_spi.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/11_rtc_alert/plib/stm32f0xx_ll_system.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/11_rtc_alert/plib/stm32f0xx_ll_tim.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/11_rtc_alert/plib/stm32f0xx_ll_usart.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/11_rtc_alert/plib/stm32f0xx_ll_utils.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/11_rtc_alert/plib/stm32f0xx_ll_wwdg.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/12_i2c_oled_display/core/cmsis_gcc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/12_i2c_oled_display/core/core_cm0.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/12_i2c_oled_display/core/stm32f051x8.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/12_i2c_oled_display/core/stm32f0xx.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/12_i2c_oled_display/core/system_stm32f0xx.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/12_i2c_oled_display/core/system_stm32f0xx.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/12_i2c_oled_display/donov.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/12_i2c_oled_display/lib/font5x7.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/12_i2c_oled_display/lib/oled_driver.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/12_i2c_oled_display/lib/oled_driver.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/12_i2c_oled_display/lib/system_handlers.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/12_i2c_oled_display/lib/xprintf.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/12_i2c_oled_display/lib/xprintf.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/12_i2c_oled_display/main.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/12_i2c_oled_display/plib/stm32f0xx_ll_adc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/12_i2c_oled_display/plib/stm32f0xx_ll_bus.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/12_i2c_oled_display/plib/stm32f0xx_ll_comp.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/12_i2c_oled_display/plib/stm32f0xx_ll_cortex.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/12_i2c_oled_display/plib/stm32f0xx_ll_crc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/12_i2c_oled_display/plib/stm32f0xx_ll_crs.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/12_i2c_oled_display/plib/stm32f0xx_ll_dac.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/12_i2c_oled_display/plib/stm32f0xx_ll_dma.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/12_i2c_oled_display/plib/stm32f0xx_ll_exti.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/12_i2c_oled_display/plib/stm32f0xx_ll_gpio.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/12_i2c_oled_display/plib/stm32f0xx_ll_i2c.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/12_i2c_oled_display/plib/stm32f0xx_ll_iwdg.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/12_i2c_oled_display/plib/stm32f0xx_ll_pwr.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/12_i2c_oled_display/plib/stm32f0xx_ll_rcc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/12_i2c_oled_display/plib/stm32f0xx_ll_rtc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/12_i2c_oled_display/plib/stm32f0xx_ll_spi.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/12_i2c_oled_display/plib/stm32f0xx_ll_system.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/12_i2c_oled_display/plib/stm32f0xx_ll_tim.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/12_i2c_oled_display/plib/stm32f0xx_ll_usart.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/12_i2c_oled_display/plib/stm32f0xx_ll_utils.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/12_i2c_oled_display/plib/stm32f0xx_ll_wwdg.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/13_spi_shift_reg/core/cmsis_gcc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/13_spi_shift_reg/core/core_cm0.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/13_spi_shift_reg/core/stm32f051x8.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/13_spi_shift_reg/core/stm32f0xx.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/13_spi_shift_reg/core/system_stm32f0xx.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/13_spi_shift_reg/core/system_stm32f0xx.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/13_spi_shift_reg/lib/system_handlers.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/13_spi_shift_reg/main.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/13_spi_shift_reg/plib/stm32f0xx_ll_adc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/13_spi_shift_reg/plib/stm32f0xx_ll_bus.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/13_spi_shift_reg/plib/stm32f0xx_ll_comp.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/13_spi_shift_reg/plib/stm32f0xx_ll_cortex.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/13_spi_shift_reg/plib/stm32f0xx_ll_crc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/13_spi_shift_reg/plib/stm32f0xx_ll_crs.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/13_spi_shift_reg/plib/stm32f0xx_ll_dac.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/13_spi_shift_reg/plib/stm32f0xx_ll_dma.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/13_spi_shift_reg/plib/stm32f0xx_ll_exti.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/13_spi_shift_reg/plib/stm32f0xx_ll_gpio.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/13_spi_shift_reg/plib/stm32f0xx_ll_i2c.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/13_spi_shift_reg/plib/stm32f0xx_ll_iwdg.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/13_spi_shift_reg/plib/stm32f0xx_ll_pwr.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/13_spi_shift_reg/plib/stm32f0xx_ll_rcc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/13_spi_shift_reg/plib/stm32f0xx_ll_rtc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/13_spi_shift_reg/plib/stm32f0xx_ll_spi.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/13_spi_shift_reg/plib/stm32f0xx_ll_system.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/13_spi_shift_reg/plib/stm32f0xx_ll_tim.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/13_spi_shift_reg/plib/stm32f0xx_ll_usart.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/13_spi_shift_reg/plib/stm32f0xx_ll_utils.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/13_spi_shift_reg/plib/stm32f0xx_ll_wwdg.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/14_adc_temp/core/cmsis_gcc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/14_adc_temp/core/core_cm0.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/14_adc_temp/core/stm32f051x8.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/14_adc_temp/core/stm32f0xx.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/14_adc_temp/core/system_stm32f0xx.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/14_adc_temp/core/system_stm32f0xx.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/14_adc_temp/lib/font5x7.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/14_adc_temp/lib/oled_driver.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/14_adc_temp/lib/oled_driver.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/14_adc_temp/lib/system_handlers.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/14_adc_temp/lib/xprintf.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/14_adc_temp/lib/xprintf.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/14_adc_temp/main.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/14_adc_temp/plib/stm32f0xx_ll_adc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/14_adc_temp/plib/stm32f0xx_ll_bus.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/14_adc_temp/plib/stm32f0xx_ll_comp.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/14_adc_temp/plib/stm32f0xx_ll_cortex.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/14_adc_temp/plib/stm32f0xx_ll_crc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/14_adc_temp/plib/stm32f0xx_ll_crs.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/14_adc_temp/plib/stm32f0xx_ll_dac.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/14_adc_temp/plib/stm32f0xx_ll_dma.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/14_adc_temp/plib/stm32f0xx_ll_exti.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/14_adc_temp/plib/stm32f0xx_ll_gpio.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/14_adc_temp/plib/stm32f0xx_ll_i2c.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/14_adc_temp/plib/stm32f0xx_ll_iwdg.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/14_adc_temp/plib/stm32f0xx_ll_pwr.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/14_adc_temp/plib/stm32f0xx_ll_rcc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/14_adc_temp/plib/stm32f0xx_ll_rtc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/14_adc_temp/plib/stm32f0xx_ll_spi.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/14_adc_temp/plib/stm32f0xx_ll_system.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/14_adc_temp/plib/stm32f0xx_ll_tim.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/14_adc_temp/plib/stm32f0xx_ll_usart.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/14_adc_temp/plib/stm32f0xx_ll_utils.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/14_adc_temp/plib/stm32f0xx_ll_wwdg.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/14_dac/core/cmsis_gcc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/14_dac/core/core_cm0.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/14_dac/core/stm32f051x8.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/14_dac/core/stm32f0xx.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/14_dac/core/system_stm32f0xx.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/14_dac/core/system_stm32f0xx.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/14_dac/lib/system_handlers.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/14_dac/main.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/14_dac/plib/stm32f0xx_ll_adc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/14_dac/plib/stm32f0xx_ll_bus.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/14_dac/plib/stm32f0xx_ll_comp.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/14_dac/plib/stm32f0xx_ll_cortex.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/14_dac/plib/stm32f0xx_ll_crc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/14_dac/plib/stm32f0xx_ll_crs.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/14_dac/plib/stm32f0xx_ll_dac.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/14_dac/plib/stm32f0xx_ll_dma.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/14_dac/plib/stm32f0xx_ll_exti.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/14_dac/plib/stm32f0xx_ll_gpio.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/14_dac/plib/stm32f0xx_ll_i2c.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/14_dac/plib/stm32f0xx_ll_iwdg.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/14_dac/plib/stm32f0xx_ll_pwr.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/14_dac/plib/stm32f0xx_ll_rcc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/14_dac/plib/stm32f0xx_ll_rtc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/14_dac/plib/stm32f0xx_ll_spi.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/14_dac/plib/stm32f0xx_ll_system.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/14_dac/plib/stm32f0xx_ll_tim.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/14_dac/plib/stm32f0xx_ll_usart.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/14_dac/plib/stm32f0xx_ll_utils.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/14_dac/plib/stm32f0xx_ll_wwdg.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/16_fsm/core/cmsis_gcc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/16_fsm/core/core_cm0.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/16_fsm/core/stm32f051x8.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/16_fsm/core/stm32f0xx.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/16_fsm/core/system_stm32f0xx.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/16_fsm/core/system_stm32f0xx.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/16_fsm/lib/fsm.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/16_fsm/lib/fsm.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/16_fsm/lib/system_handlers.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/16_fsm/main.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/16_fsm/plib/stm32f0xx_ll_adc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/16_fsm/plib/stm32f0xx_ll_bus.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/16_fsm/plib/stm32f0xx_ll_comp.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/16_fsm/plib/stm32f0xx_ll_cortex.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/16_fsm/plib/stm32f0xx_ll_crc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/16_fsm/plib/stm32f0xx_ll_crs.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/16_fsm/plib/stm32f0xx_ll_dac.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/16_fsm/plib/stm32f0xx_ll_dma.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/16_fsm/plib/stm32f0xx_ll_exti.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/16_fsm/plib/stm32f0xx_ll_gpio.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/16_fsm/plib/stm32f0xx_ll_i2c.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/16_fsm/plib/stm32f0xx_ll_iwdg.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/16_fsm/plib/stm32f0xx_ll_pwr.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/16_fsm/plib/stm32f0xx_ll_rcc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/16_fsm/plib/stm32f0xx_ll_rtc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/16_fsm/plib/stm32f0xx_ll_spi.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/16_fsm/plib/stm32f0xx_ll_system.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/16_fsm/plib/stm32f0xx_ll_tim.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/16_fsm/plib/stm32f0xx_ll_usart.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/16_fsm/plib/stm32f0xx_ll_utils.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/16_fsm/plib/stm32f0xx_ll_wwdg.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/examples/adc2dma.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/examples/echo.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/examples/exti.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/examples/gpio.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/examples/printf.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/examples/pwm.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/examples/simple_terminal.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/examples/spi.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/examples/timer.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/examples/usart.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos/core/cmsis_gcc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos/core/core_cm0.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos/core/stm32f051x8.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos/core/stm32f0xx.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos/core/stm32f0xx_it.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos/core/stm32f0xx_it.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos/core/system_stm32f0xx.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos/core/system_stm32f0xx.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos/freertos/FreeRTOSConfig.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos/freertos/croutine.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos/freertos/event_groups.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos/freertos/include/FreeRTOS.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos/freertos/include/StackMacros.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos/freertos/include/croutine.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos/freertos/include/deprecated_definitions.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos/freertos/include/event_groups.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos/freertos/include/list.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos/freertos/include/message_buffer.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos/freertos/include/mpu_prototypes.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos/freertos/include/mpu_wrappers.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos/freertos/include/portable.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos/freertos/include/projdefs.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos/freertos/include/queue.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos/freertos/include/semphr.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos/freertos/include/stack_macros.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos/freertos/include/stream_buffer.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos/freertos/include/task.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos/freertos/include/timers.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos/freertos/list.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos/freertos/portable/GCC/ARM_CM0/port.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos/freertos/portable/GCC/ARM_CM0/portmacro.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos/freertos/portable/MemMang/heap_4.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos/freertos/queue.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos/freertos/stream_buffer.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos/freertos/tasks.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos/freertos/timers.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos/lib/os_routines.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos/lib/os_routines.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos/lib/xprintf.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos/lib/xprintf.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos/main.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos/plib/stm32f0xx_ll_adc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos/plib/stm32f0xx_ll_bus.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos/plib/stm32f0xx_ll_comp.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos/plib/stm32f0xx_ll_cortex.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos/plib/stm32f0xx_ll_crc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos/plib/stm32f0xx_ll_crs.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos/plib/stm32f0xx_ll_dac.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos/plib/stm32f0xx_ll_dma.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos/plib/stm32f0xx_ll_exti.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos/plib/stm32f0xx_ll_gpio.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos/plib/stm32f0xx_ll_i2c.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos/plib/stm32f0xx_ll_iwdg.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos/plib/stm32f0xx_ll_pwr.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos/plib/stm32f0xx_ll_rcc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos/plib/stm32f0xx_ll_rtc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos/plib/stm32f0xx_ll_spi.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos/plib/stm32f0xx_ll_system.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos/plib/stm32f0xx_ll_tim.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos/plib/stm32f0xx_ll_usart.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos/plib/stm32f0xx_ll_utils.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos/plib/stm32f0xx_ll_wwdg.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_idle/core/cmsis_gcc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_idle/core/core_cm0.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_idle/core/stm32f051x8.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_idle/core/stm32f0xx.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_idle/core/stm32f0xx_it.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_idle/core/stm32f0xx_it.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_idle/core/system_stm32f0xx.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_idle/core/system_stm32f0xx.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_idle/freertos/FreeRTOSConfig.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_idle/freertos/croutine.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_idle/freertos/event_groups.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_idle/freertos/include/FreeRTOS.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_idle/freertos/include/StackMacros.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_idle/freertos/include/croutine.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_idle/freertos/include/deprecated_definitions.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_idle/freertos/include/event_groups.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_idle/freertos/include/list.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_idle/freertos/include/message_buffer.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_idle/freertos/include/mpu_prototypes.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_idle/freertos/include/mpu_wrappers.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_idle/freertos/include/portable.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_idle/freertos/include/projdefs.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_idle/freertos/include/queue.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_idle/freertos/include/semphr.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_idle/freertos/include/stack_macros.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_idle/freertos/include/stream_buffer.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_idle/freertos/include/task.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_idle/freertos/include/timers.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_idle/freertos/list.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_idle/freertos/portable/GCC/ARM_CM0/port.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_idle/freertos/portable/GCC/ARM_CM0/portmacro.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_idle/freertos/portable/MemMang/heap_4.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_idle/freertos/queue.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_idle/freertos/stream_buffer.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_idle/freertos/tasks.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_idle/freertos/timers.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_idle/lib/os_routines.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_idle/lib/os_routines.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_idle/lib/xprintf.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_idle/lib/xprintf.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_idle/main.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_idle/plib/stm32f0xx_ll_adc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_idle/plib/stm32f0xx_ll_bus.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_idle/plib/stm32f0xx_ll_comp.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_idle/plib/stm32f0xx_ll_cortex.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_idle/plib/stm32f0xx_ll_crc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_idle/plib/stm32f0xx_ll_crs.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_idle/plib/stm32f0xx_ll_dac.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_idle/plib/stm32f0xx_ll_dma.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_idle/plib/stm32f0xx_ll_exti.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_idle/plib/stm32f0xx_ll_gpio.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_idle/plib/stm32f0xx_ll_i2c.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_idle/plib/stm32f0xx_ll_iwdg.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_idle/plib/stm32f0xx_ll_pwr.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_idle/plib/stm32f0xx_ll_rcc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_idle/plib/stm32f0xx_ll_rtc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_idle/plib/stm32f0xx_ll_spi.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_idle/plib/stm32f0xx_ll_system.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_idle/plib/stm32f0xx_ll_tim.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_idle/plib/stm32f0xx_ll_usart.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_idle/plib/stm32f0xx_ll_utils.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_idle/plib/stm32f0xx_ll_wwdg.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_ipc/core/cmsis_gcc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_ipc/core/core_cm0.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_ipc/core/stm32f051x8.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_ipc/core/stm32f0xx.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_ipc/core/stm32f0xx_it.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_ipc/core/stm32f0xx_it.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_ipc/core/system_stm32f0xx.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_ipc/core/system_stm32f0xx.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_ipc/freertos/FreeRTOSConfig.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_ipc/freertos/croutine.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_ipc/freertos/event_groups.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_ipc/freertos/include/FreeRTOS.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_ipc/freertos/include/StackMacros.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_ipc/freertos/include/croutine.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_ipc/freertos/include/deprecated_definitions.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_ipc/freertos/include/event_groups.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_ipc/freertos/include/list.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_ipc/freertos/include/message_buffer.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_ipc/freertos/include/mpu_prototypes.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_ipc/freertos/include/mpu_wrappers.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_ipc/freertos/include/portable.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_ipc/freertos/include/projdefs.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_ipc/freertos/include/queue.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_ipc/freertos/include/semphr.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_ipc/freertos/include/stack_macros.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_ipc/freertos/include/stream_buffer.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_ipc/freertos/include/task.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_ipc/freertos/include/timers.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_ipc/freertos/list.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_ipc/freertos/portable/GCC/ARM_CM0/port.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_ipc/freertos/portable/GCC/ARM_CM0/portmacro.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_ipc/freertos/portable/MemMang/heap_4.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_ipc/freertos/queue.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_ipc/freertos/stream_buffer.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_ipc/freertos/tasks.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_ipc/freertos/timers.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_ipc/lib/os_routines.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_ipc/lib/os_routines.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_ipc/lib/xprintf.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_ipc/lib/xprintf.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_ipc/main.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_ipc/plib/stm32f0xx_ll_adc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_ipc/plib/stm32f0xx_ll_bus.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_ipc/plib/stm32f0xx_ll_comp.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_ipc/plib/stm32f0xx_ll_cortex.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_ipc/plib/stm32f0xx_ll_crc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_ipc/plib/stm32f0xx_ll_crs.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_ipc/plib/stm32f0xx_ll_dac.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_ipc/plib/stm32f0xx_ll_dma.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_ipc/plib/stm32f0xx_ll_exti.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_ipc/plib/stm32f0xx_ll_gpio.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_ipc/plib/stm32f0xx_ll_i2c.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_ipc/plib/stm32f0xx_ll_iwdg.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_ipc/plib/stm32f0xx_ll_pwr.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_ipc/plib/stm32f0xx_ll_rcc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_ipc/plib/stm32f0xx_ll_rtc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_ipc/plib/stm32f0xx_ll_spi.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_ipc/plib/stm32f0xx_ll_system.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_ipc/plib/stm32f0xx_ll_tim.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_ipc/plib/stm32f0xx_ll_usart.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_ipc/plib/stm32f0xx_ll_utils.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/rtos_ipc/plib/stm32f0xx_ll_wwdg.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/terminal/core/cmsis_gcc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/terminal/core/core_cm0.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/terminal/core/stm32f051x8.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/terminal/core/stm32f0xx.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/terminal/core/stm32f0xx_it.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/terminal/core/stm32f0xx_it.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/terminal/core/system_stm32f0xx.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/terminal/core/system_stm32f0xx.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/terminal/lib/adc.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/terminal/lib/button.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/terminal/lib/fsm.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/terminal/lib/fsm.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/terminal/lib/fsm_states_defs.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/terminal/lib/led.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/terminal/lib/pwm.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/terminal/lib/terminal.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/terminal/lib/terminal.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/terminal/lib/xprintf.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/terminal/lib/xprintf.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/terminal/main.c">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/terminal/plib/stm32f0xx_ll_adc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/terminal/plib/stm32f0xx_ll_bus.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/terminal/plib/stm32f0xx_ll_comp.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/terminal/plib/stm32f0xx_ll_cortex.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/terminal/plib/stm32f0xx_ll_crc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/terminal/plib/stm32f0xx_ll_crs.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/terminal/plib/stm32f0xx_ll_dac.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/terminal/plib/stm32f0xx_ll_dma.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/terminal/plib/stm32f0xx_ll_exti.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/terminal/plib/stm32f0xx_ll_gpio.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/terminal/plib/stm32f0xx_ll_i2c.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/terminal/plib/stm32f0xx_ll_iwdg.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/terminal/plib/stm32f0xx_ll_pwr.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/terminal/plib/stm32f0xx_ll_rcc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/terminal/plib/stm32f0xx_ll_rtc.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/terminal/plib/stm32f0xx_ll_spi.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/terminal/plib/stm32f0xx_ll_system.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/terminal/plib/stm32f0xx_ll_tim.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/terminal/plib/stm32f0xx_ll_usart.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/terminal/plib/stm32f0xx_ll_utils.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/terminal/plib/stm32f0xx_ll_wwdg.h">
+			<Option target="labs"/>
+		</Unit>
+		<Unit filename="/home/kgbcomrade/stm32f0_ARM/labs/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
